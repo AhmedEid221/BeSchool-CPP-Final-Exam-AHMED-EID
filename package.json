@@ -1,0 +1,20 @@
+{
+  "name": "beschool-cpp-final-exam",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BeSchool C++ final exam with server-side grading and Judge0 C++17 execution",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "google-auth-library": "^9.15.1",
+    "googleapis": "^144.0.0"
+  }
+}

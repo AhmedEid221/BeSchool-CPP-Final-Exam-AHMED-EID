@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: beschool-cpp-final-exam
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JUDGE0_URL
+        value: https://ce.judge0.com
+      - key: JUDGE0_LANGUAGE_ID
+        value: "54"
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: GOOGLE_SHEET_ID
+        value: 1HP2b_pHOPD-HyZ9ihGIbZSk1CLeFJclH3-GwVuDDY
+      - key: GOOGLE_SERVICE_ACCOUNT_JSON_BASE64
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
